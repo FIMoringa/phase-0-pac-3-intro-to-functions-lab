@@ -25,3 +25,21 @@ function logShout(string) {
 function logWhisper(string) {
   console.log(string.toLowerCase());
 }
+
+// sayHiToHeadphonedRoommate(string)
+//     1) returns "I can't hear you!" if `string` is lowercase
+//     2) returns "YES INDEED!" if `string` is uppercase
+//     3) returns "I would love to!" if `string` is "Let's have dinner together!"`
+
+function sayHiToHeadphonedRoommate(string) {
+  if (string === string.toLowerCase()) {
+    return "I can't hear you!";
+  } else if (string === string.toUpperCase()) {
+    return "YES INDEED!";
+  } else if (string === "Let's have dinner together!") {
+    return "I would love to!";
+  }
+}
+
+
+console.log(sayHiToHeadphonedRoommate("Let's have dinner together!"))
